@@ -384,6 +384,22 @@ span {
     padding: 4vw 6vw;
 }
 
+.research-process {
+    background-image: url("../assets/images/Research/process.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.research-process .col {
+    height: 20em;
+    border-radius: 1.5em;
+}
+
+.research-process .col:hover {
+    background-color: #D8D8D8;
+    opacity: 20%;
+}
+
 @media only screen and (max-width: 600px) {
     p {
         font-size: 3vw;
@@ -427,6 +443,9 @@ span {
     }
     .research-goals .col-sm {
         margin-top: 2vw;
+    }
+    .research-goals .body {
+        font-size: 4vw;
     }
     .ipain-points .col-sm {
         margin-top: 12vw;
