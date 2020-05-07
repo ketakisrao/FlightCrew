@@ -39,6 +39,7 @@ nav a {
 
 .active a {
     color: #20D15B!important;
+    font-weight: 600;
 }
 
 .container-fluid {
@@ -387,11 +388,11 @@ span {
 .research-process {
     background-image: url("../assets/images/Research/process.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .research-process .col {
-    height: 20em;
+    height: 25vw;
     border-radius: 1.5em;
 }
 
