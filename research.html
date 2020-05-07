@@ -106,10 +106,10 @@
                 <h2>Research<br>Process</h2>
             </div>
             <div class="research-activities">
-                <div class="row">
+                <div id="ra-1" class="row">
                     <div class="col-5">
                         <ul>
-                            <li>Analogous Domain Observe & Intercepts</li>
+                            <li><span>Analogous Domain Observe & Intercepts</span></li>
                             <li>Airport Field Observation</li>
                             <li>Airport Shadowings</li>
                             <li>Line Simulation Prototype</li>
@@ -121,12 +121,32 @@
                         <img src="assets/images/Research/analogous.png" />
                     </div>
                 </div>
+                <div id="ra-2" class="row invisible">
+                    <div class="col-5">
+                        <ul>
+                            <li>Analogous Domain Observe & Intercepts</li>
+                            <li>Airport Field Observation</li>
+                            <li>Airport Shadowings</li>
+                            <li><span>Line Simulation Prototype</span></li>
+                            <li>Quantitative Analysis</li>
+                            <li>Disney & Orlando Airport Field Observation</li>
+                        </ul>
+                    </div>
+                    <div class="col-7 text-center">
+                        <img src="assets/images/Research/pretotype.png" />
+                    </div>
+                </div>
+                <div id="ra-3" class="row invisible">
+                    <div class="col display-text">
+                        <b>We will be there soon! More to come by the end of August.</b>
+                    </div>
+                </div>
             </div>
             <div class="row research-process">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+                <div id="p-1" class="col"></div>
+                <div id="p-2" class="col"></div>
+                <div id="p-3" class="col"></div>
+                <div id="p-3" class="col"></div>
             </div>
         </div>
     </section>
@@ -370,9 +390,13 @@
     <script src="js/bootstrap.js "></script>
     <script>
         $(document).ready(function() {
-            $(".research-process div").mouseover(function() {
+            $(".research-process div").mouseover(function(e) {
                 $(".research-process div").removeClass('phase-active');
                 $(this).addClass('phase-active');
+                $(".research-activities>div").addClass("invisible");
+
+                var id = e.target.id.split("-")[1];
+                $("#ra-" + id).removeClass("invisible");
             });
         });
     </script>
