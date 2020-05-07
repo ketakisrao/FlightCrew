@@ -397,7 +397,7 @@
         border-radius: 1.5em;
     }
     
-    .research-process .col:hover {
+    .phase-active {
         background-color: #D8D8D8;
         opacity: 20%;
     }
@@ -469,7 +469,7 @@
             margin-top: 2vw;
         }
         .research-goals .body {
-            font-size: 4vw;
+            font-size: 3vw;
         }
         .ipain-points .col-sm {
             margin-top: 12vw;

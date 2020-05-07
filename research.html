@@ -82,18 +82,18 @@
             </div>
             <div class="row research-goals">
                 <div class="col-sm">
-                    <div class="body">
+                    <div class="">
                         <img src="assets/images/Research/uncoverPain.svg" />
                     </div>
-                    <div class="">
+                    <div class="body">
                         Uncover pain points and address user’s underlying needs.
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="body">
+                    <div class="">
                         <img src="assets/images/Research/insights.svg" />
                     </div>
-                    <div class="">
+                    <div class="body">
                         Develop insights about queuing that informs future design
                     </div>
                 </div>
@@ -368,6 +368,14 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
     <script src="js/bootstrap.js "></script>
+    <script>
+        $(document).ready(function() {
+            $(".research-process div").mouseover(function() {
+                $(".research-process div").removeClass('phase-active');
+                $(this).addClass('phase-active');
+            });
+        });
+    </script>
 </body>
 
 </html>
