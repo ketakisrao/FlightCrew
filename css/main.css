@@ -10,6 +10,10 @@ body {
     background-color: #e0f5e1;
 }
 
+p {
+    font-size: 1.5vw;
+}
+
 nav {
     margin: 0 8vw;
     padding: 0!important;
@@ -198,11 +202,11 @@ h6 {
     padding: 2vw 0 2vw 20vw;
 }
 
-.research-goals .col {
+.research-goals .col-sm {
     display: flex;
 }
 
-.research-goals .col div {
+.research-goals .col-sm div {
     padding: 0 0.5rem;
     display: flex;
     align-items: center;
@@ -338,6 +342,9 @@ span {
 }
 
 @media only screen and (max-width: 600px) {
+    p {
+        font-size: 3vw;
+    }
     .hide {
         display: none;
     }
