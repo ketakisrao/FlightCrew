@@ -14,6 +14,10 @@ p {
     font-size: 1.5vw;
 }
 
+img {
+    width: 100%;
+}
+
 nav {
     margin: 0 8vw;
     padding: 0!important;
@@ -112,6 +116,10 @@ h6 {
 
 .banner .col-sm {
     text-align: right;
+}
+
+.banner img {
+    width: 80%;
 }
 
 .banner p {
@@ -242,10 +250,16 @@ h6 {
 .quote .mark {
     background-color: transparent;
     padding-right: 2vw;
+    margin-top: -0.5vw;
 }
 
 .quote .mark img {
     width: 1.5rem;
+}
+
+.quote p {
+    font-size: 1.1vw;
+    margin-bottom: 0;
 }
 
 .insight-section .col-4 {
@@ -333,10 +347,6 @@ h6 {
     justify-content: center;
 }
 
-img {
-    width: 100%;
-}
-
 span {
     color: #27F26F;
 }
@@ -391,6 +401,10 @@ span {
     .insight-section img {
         height: 20vw;
         max-width: 100%;
+    }
+    .quote p {
+        font-size: 2.5vw;
+        margin-bottom: 0;
     }
     .research-question .banner p {
         font-size: 3vw;
