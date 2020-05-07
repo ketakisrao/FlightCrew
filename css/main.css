@@ -389,6 +389,7 @@
         background-image: url("../assets/images/Research/process.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        margin-top: 2rem;
     }
     
     .research-process .col {
@@ -399,6 +400,10 @@
     .research-process .col:hover {
         background-color: #D8D8D8;
         opacity: 20%;
+    }
+    
+    .research-activities {
+        margin-top: 4vw;
     }
     
     .research-activities .col-5 {
@@ -412,6 +417,7 @@
         flex-direction: column;
         justify-content: space-around;
         margin: 0;
+        font-size: 1vw;
     }
     
     .research-activities .col-7 img {
@@ -503,5 +509,8 @@
         .overlay p {
             padding: 1vw 2vw;
             font-size: 2vw;
+        }
+        .research-activities .col-5 ul {
+            font-size: 1.5vw;
         }
     }
