@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat';
 }
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,7 @@ body {
     height: 580px;
     background-color: #e0f5e1;
 }
+
 nav {
     margin: 0 8vw;
     padding: 0!important;
@@ -17,6 +19,7 @@ nav a {
     text-decoration: none;
     color: #3a3a3a;
 }
+
 .nav-item {
     text-transform: uppercase;
     padding: 1em;
@@ -25,28 +28,32 @@ nav a {
 .active a {
     color: #20D15B!important;
 }
+
 .container-fluid {
     padding: 8vh 8vw;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
 }
 
-.center {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
 .content {
+    width: 80%;
     height: 12em;
     display: flex;
     flex-direction: column;
     align-content: space-around;
 }
 
-
+.hero-content .col img {
+    width: 80%;
+    margin: 0 auto;
+}
 
 .card-row {
     padding: 2vh 4vw;
@@ -59,19 +66,23 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
     margin: 0 auto;
 }
+
 .card-header {
     background-color: transparent;
     border: none;
 }
+
 .card p {
     text-align: center;
     height: 5em;
     font-weight: 500;
 }
+
 .card h1 {
     text-align: center;
     padding: 1.5em 0 0 0;
 }
+
 .invisible {
     display: none;
 }
@@ -83,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 .gray-cards .card {
     background-color: #3A3A3A;
 }
+
 .group-card p {
     text-align: center;
     margin-bottom: 0.5rem;
@@ -97,31 +109,39 @@ h1, h2, h3, h4, h5, h6 {
 .banner .col-sm {
     text-align: right;
 }
-.banner p{
+
+.banner p {
     text-align: justify;
 }
 
 .pain-points {
     display: flex;
 }
+
 .pain-points-img {
     width: 40%;
 }
+
 .pain-points-img img {
     max-width: 100%;
 }
+
 .pain-points-content {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .pain-points-content div {
     width: 60%;
     margin: 0 auto;
     min-height: 8em;
 }
 
+.crew {
+    text-align: center;
+}
 
 .crew .title {
     width: 80%;
@@ -146,33 +166,70 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-@media (max-width: 600px) {
-  .banner img {
-      padding: 2em 0;
-  }
-  .banner .col-sm {
+.btn-primary {
+    background-color: #20D15B;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+}
+
+.crew-members {
     text-align: center;
-  }
-  .pain-points-content {
-      width: 100%;
-      margin: 2em 0;
-  }
-  .pain-points-content div {
-      width: 90%;
-  }
-  .pain-points-img {
-      width: 90%;
-  }
-  .group-card {
-      margin: 1rem 0;
-  }
-  .pain-points {
-      display: block;
-  }
-  .crew .col-sm img {
-      width: 40%;
-  }
-  .crew .col-sm {
-      margin: 1rem 0;
-  }
+}
+
+.crew-members img {
+    width: 60%;
+}
+
+.member-info {
+    text-align: left;
+}
+
+.member-info .title {
+    text-transform: uppercase;
+    color: #20D15B;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.crew-members .row {
+    margin: 4rem 0;
+}
+
+@media (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+    .banner img {
+        padding: 2em 0;
+    }
+    .banner .col-sm {
+        text-align: center;
+    }
+    .pain-points-content {
+        width: 100%;
+        margin: 2em 0;
+    }
+    .pain-points-content div {
+        width: 90%;
+    }
+    .pain-points-img {
+        width: 90%;
+    }
+    .group-card {
+        margin: 1rem 0;
+    }
+    .pain-points {
+        display: block;
+    }
+    .crew .col-sm img {
+        width: 40%;
+    }
+    .crew .col-sm {
+        margin: 1rem 0;
+    }
+    .crew-members img {
+        width: 100%;
+    }
 }
